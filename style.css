@@ -1,0 +1,146 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Raleway', sans-serif;
+    background-color: #121212;
+}
+
+/* Main part start */
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* banner section start */
+section.banner{
+display: flex;
+height: 100vh;
+}
+.banner-left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-size: 60px;
+    color: #22bedd;
+    position: relative;
+    border: 2px solid yellow;
+    position: relative; 
+    color: transparent;
+}
+.title::before{
+    content: 'My Gallery';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #22bedd;
+    animation: typing 2s linear infinite;
+
+}
+@keyframes typing {
+    0%{
+        content:' M|';
+    }
+    5%{
+        content:'My|';
+    }
+    10%{
+        content:'My |';
+    }
+    15%{
+        content:'My G|';
+    }
+    20%{
+        content:'My Ga|';
+    }
+    25%{
+        content:'My Gal|';
+    }
+    30%{
+        content:'My Gall|';
+    }
+    35%{
+        content:'My Galle|';
+    }
+    40%{
+        content:'My Galler|';
+    }
+    45%,89%{
+        content:'My Gallery|';
+    }
+    50%,89%{
+        content:'My Gallery|';
+    }
+    90%{
+        content:'My Galler|';
+    }
+    91%{
+        content:'My Galle|';
+    }
+    92%{
+        content:'My Gall|';
+    }
+    93%{
+        content:'My Gal|';
+    }
+    94%{
+        content:'My Ga|';
+    }
+    95%{
+        content:'My G|';
+    }
+    96%{
+        content:'My |';
+    }
+    97%{
+        content:'My|';
+    }
+    98%{
+        content:'M|';
+    }
+    99%{
+        content:'|';
+    }
+    100%{
+        content:'|';
+    }
+}
+
+.banner-title p{
+    line-height: 2;
+    color: #22bedd;
+    margin: 20px 0px;
+}
+.btn{
+    background-color: #22bedd;
+    padding: 10px 20px;
+    border: 2px solid #22bedd;
+    color: #fff;
+    transition: 0.5s linear;
+}
+.btn:hover{
+    background-color: transparent;
+}
+
+.banner-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-right img{
+    width: 50%;
+    border: 2px solid #22bedd;;
+    
+}
+
+
+
+/* banner section end */
+
+/* Main part end */
